@@ -29,7 +29,7 @@ let score = 0;
 let m1 = "Well done! Your selfishness has ensured others will go without!";
 let m2 = "What a brainless amount of toilet paper! Good job!";
 let m3 = "Great work! You panic bought like an idiot!";
-let m4 = "Superb! Now the elderly and those must vulnerable will perish!";
+let m4 = "Superb! Now the elderly and those most vulnerable will perish!";
 let winMsg = [m1, m2, m3, m4];
 
 let s1 = "You are what you wipe!";
