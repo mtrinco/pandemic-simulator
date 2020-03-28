@@ -14,9 +14,13 @@ let restartBtn;
 let restart = false;
 
 // Assets - Emoji
-let cart = "🛒";
-let toiletPaper = "🧻";
-let flu = "🦠";
+let cart = String.fromCodePoint("0x1F6D2");
+let toiletPaper = String.fromCodePoint("0x1F9FB");
+let flu = String.fromCodePoint("0x1F9A0");
+
+// let cart = "🛒";
+// let toiletPaper = "🧻";
+// let flu = "🦠";
 let emojiSize = 80;
 
 // Ghost variables
@@ -41,7 +45,9 @@ let savageMsg = [s1, s2, s3];
 let soundFX;
 let soundBtn;
 let playSound = false;
-let soundEmoji = playSound ? "🔈" : "🔇";
+let soundOn = String.fromCodePoint("0x1F508");
+let soundOff = String.fromCodePoint("0x1F507");
+let soundEmoji = playSound ? soundOn : soundOff;
 let fartArray;
 let f1, f2, f3, f4, f5;
 let cough;
@@ -261,10 +267,10 @@ function toggleSound() {
   playSound = !playSound;
 
   if(playSound) {
-    soundBtn.html("🔈");
+    soundBtn.html(soundOn);
     soundFX.loop();
   } else {
-    soundBtn.html("🔇");
+    soundBtn.html(soundOff);
     soundFX.stop();
   }
 }
